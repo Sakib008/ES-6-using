@@ -125,5 +125,6 @@ const employees = [
     {name: 'Muskan',age : 27,salary : 21000},
     {name: 'Samrat',age : 39 , salary : 31000},
 ];
-const filterBySalary = arr=>arr.filter(obj=>obj.salary > 22000);
-// console.log(filterBySalary(employees));
+const filterBySalary = arr=>arr.filter(obj=>obj.salary > 22000 && obj.age >25);
+console.log(filterBySalary(employees));
+
