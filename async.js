@@ -59,4 +59,4 @@ const fakeFetch =(msg,shouldSucceed)=>{
 };
 fakeFetch('hi..........',true);
 
-
+console.log('Hi it is complete')
