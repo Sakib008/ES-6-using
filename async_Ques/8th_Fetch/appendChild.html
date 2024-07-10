@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Append Child Practice</title>
+</head>
+<body>
+    <div id="content"></div>
+<button id="btn" >Add Paragraph</button>
+    <script>
+        const content = document.querySelector('#content')
+        const btn  = document.querySelector('#btn');
+        const generateText = (str)=>{
+            const newPara = document.createElement('h2');
+            newPara.textContent = str;
+           content.appendChild(newPara);
+        }
+btn.addEventListener('click', ()=>generateText('It is Good Decision'));
+    </script>
+</body>
+</html>
