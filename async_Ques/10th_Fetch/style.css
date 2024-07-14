@@ -1,0 +1,22 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+div{
+    border: 2px solid rgb(175, 32, 218);
+    padding: 1.5rem ;
+    border-radius: 6px;
+    color: coral;
+    background-color: lightgoldenrodyellow;
+    font-family: sans-serif;
+    font-size: 1rem;
+}
