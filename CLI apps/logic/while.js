@@ -108,3 +108,65 @@ const readline = require('readline-sync');
 //     }
 // };
 
+
+// -------Factorial Calculation -------
+
+// let factorialNumber = 3;
+// let sum = 1;
+// while(sum<=factorialNumber){
+//     sum*factorialNumber;
+//     1++;
+//     console(sum*factorialNumber);
+// }
+// console.log(`you have enee ${sum}`);
+
+
+// -------- Average Calculation --------
+
+// let enteredNumber = parseFloat(Math.floor(readline.question('Enter Number to do the Average of Numbers : ')))
+// let addLength = 0;
+// let maxTimes = 0;
+// while(true){
+//     addLength += enteredNumber  ;
+//     maxTimes++;
+//     enteredNumber = parseFloat(Math.floor(readline.question('Enter Number for Average ( 0 to exit ) ')))
+
+//     if(enteredNumber === 0){
+//         break;
+//     }
+// };
+// console.log(Math.floor(addLength/maxTimes,2))
+
+
+// -------- Reverse a Number ---------
+// Write a program that reverses a given number using a while loop.
+
+// let number = new String(readline.question('Enter a Number for Reverse : '));
+// let reverseNumber = 0;
+// let array = 0;
+// while(true){
+//     if(array<number.length){
+        
+//         console.log(number[array])
+//         console.log(number[array++])
+//         console.log(number.valueOf())
+//         const addedNumber = number[array--]
+//     }else{
+//         break;
+//     }
+// }
+
+
+
+// Prompt the user to enter a number ( Reverse The Number)
+let number = parseInt(readline.question('Enter a number to reverse: '));
+let reversedNumber = 0;
+
+while (number !== 0) {
+    let digit = number % 10;
+ 
+    reversedNumber = reversedNumber * 10 + digit;
+ 
+    number = Math.floor(number / 10);
+}
+console.log('The reversed number is:', reversedNumber);
